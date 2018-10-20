@@ -1,20 +1,237 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<h1> FORMMMSSSS </h1>
 
+<div>
+  <form id="1">
+    <div>
+      <p>1. I am a(n)</p><br>
+      <input type="radio" name="isPanelist" value="False">A. Audience Member that is not a panelist<br>
+      <input type="radio" name="isPanelist" value="True">B. Panelist<br>
+    </div>
+
+    <div>
+      <p>2. Are you a professional educator?</p><br>
+      <input type="radio" name="isEducator" value="True">A. Yes<br>
+      <input type="radio" name="isEducator" value="False">B. No<br>
+    </div>
+
+    <div>
+      <p>3. Please indicate the gender option you most identify with:</p><br>
+      <input type="radio" name="gender" value="Male">A. Male<br>
+      <input type="radio" name="gender" value="Female">B. Female<br>
+      <input type="radio" name="gender" value="">C. <input type="text"  name="otherGender" placeholder="Other"><br>
+
+    </div>
+
+    <div>
+      <p>4. With what group or groups do you identify <strong>(you may select multiple option)</strong>?</p><br>
+      <input type="checkbox" name="demographics" value="Hispanic/Latino">A. Hispanic/Latino<br>
+      <input type="checkbox" name="demographics" value="Asian">B. Asian<br>
+      <input type="checkbox" name="demographics" value="White">C. White<br>
+      <input type="checkbox" name="demographics" value="American-Indian/Alaskan-Native">D. American Indian/Alaskan Native<br>
+      <input type="checkbox" name="demographics" value="Black/African-American">E. Black/African American<br>
+      <input type="checkbox" name="demographics" value="Native-Hawaiian-or-other-Pacific-Islander">F. Native Hawaiian or other Pacific Islander<br>
+      <input type="checkbox" name="demographics" value="">G. <input type="text"  name="otherDemographics" placeholder="Other"><br>
+    </div>
+
+    <div>
+      <p>5. My age in years is</p><br>
+      <input type="radio" name="age" value="younger-than-12">A. Younger than 12<br>
+      <input type="radio" name="age" value="12-15">B. 12-15<br>
+      <input type="radio" name="age" value="16-19">C. 16-19<br>
+      <input type="radio" name="age" value="20-24">D. 20-24<br>
+      <input type="radio" name="age" value="25-30">E. 25-30<br>
+      <input type="radio" name="age" value="31-35">F. 31-35<br>
+      <input type="radio" name="age" value="36-40">G. 36-40<br>
+      <input type="radio" name="age" value="41-50">H. 41-50<br>
+      <input type="radio" name="age" value="51-59">I. 51-59<br>
+      <input type="radio" name="age" value="60+">J. 60+<br>
+    </div>
+
+    <div>
+      <p>6. My highest level of education is</p><br>
+      <input type="radio" name="education" value="middle-school-enrolled">A. Enrolled in 6th-8th grade<br>
+      <input type="radio" name="education" value="high-school-enrolled">B. Enrolled in 9th-12th grade<br>
+      <input type="radio" name="education" value="high-school-diploma">C. High School Diploma or GED<br>
+      <input type="radio" name="education" value="college-enrolled">D. Some College with No Degree<br>
+      <input type="radio" name="education" value="associate-degree">E. Associate Degree<br>
+      <input type="radio" name="education" value="bachelor-degree">F. Bachelor Degree<br>
+      <input type="radio" name="education" value="grad-school-enrolled">G. College Graduate Enrolled in Graduate Program<br>
+      <input type="radio" name="education" value="masters-degree">H. Master's Degree<br>
+      <input type="radio" name="education" value="phd">I. PhD<br>
+    </div>
+
+    <div>
+      <p>7. Years I have attended <strong>Science Panels</strong> at Phoenix Comicfest (formerly Phoenix Comicon):</p><br>
+      <input type="radio" name="attendanceYears" value="0">A. First Year<br>
+      <input type="radio" name="attendanceYears" value="1">B. 1<br>
+      <input type="radio" name="attendanceYears" value="2-3">C. 2-3<br>
+      <input type="radio" name="attendanceYears" value="4-5">D. 4-5<br>
+      <input type="radio" name="attendanceYears" value="6+">E. 6+<br>
+    </div>
+
+    <div>
+      <p>8. Each year, how many <strong>Science Panels</strong> at Phoenix Comicfest (formerly Phoenix Comicon) do you attend or plan to attend:</p><br>
+      <input type="radio" name="panelAttendance" value="1">A. 1<br>
+      <input type="radio" name="panelAttendance" value="2-3">B. 2-3<br>
+      <input type="radio" name="panelAttendance" value="4-5">C. 4-5<br>
+      <input type="radio" name="panelAttendance" value="6+">D. 6+<br>
+    </div>
+
+    <div>
+      <p>9. Which area(s) of study are you most intered in learning about (you may choose multiple)?</p><br>
+      <input type="checkbox" name="studyArea" value="astronomy">A. Astronomy<br>
+      <input type="checkbox" name="studyArea" value="biology">B. Biology<br>
+      <input type="checkbox" name="studyArea" value="chemistry">C. Chemistry<br>
+      <input type="checkbox" name="studyArea" value="physics">D. Physics<br>
+      <input type="checkbox" name="studyArea" value="engineering">E. Engineering<br>
+      <input type="checkbox" name="studyArea" value="psychology">F. Psychology<br>
+      <input type="checkbox" name="studyArea" value="robotics">G. Robotics <br>
+      <input type="checkbox" name="studyArea" value="computer-science">H. Computer Science<br>
+      <input type="checkbox" name="studyArea" value="mathematics">I. Mathematics<br>
+      <input type="checkbox" name="studyArea" value="social-science">J. Social Science<br>
+      <input type="checkbox" name="studyArea" value="art">K. Art<br>
+      <input type="checkbox" name="studyArea" value="">L. <input type="text"  name="studyArea" placeholder="Other"><br>
+    </div>
+
+    <p>Please indicate the extent to which you agree or disagree with the following statements</p>
+
+    <div>
+      <p> The panels I attended were relevant to my personal or professional life.</p>
+      <input type="radio" name="relevancy" value="1"> Strongly Disagree<br>
+      <input type="radio" name="relevancy" value="2"> Disagree<br>
+      <input type="radio" name="relevancy" value="3"> No Opinion<br>
+      <input type="radio" name="relevancy" value="4"> Agree<br>
+      <input type="radio" name="relevancy" value="5"> Strongly Agree<br>
+      <input type="radio" name="relevancy" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> The panels I attended were of a high educational quality.</p>
+      <input type="radio" name="quality" value="1"> Strongly Disagree<br>
+      <input type="radio" name="quality" value="2"> Disagree<br>
+      <input type="radio" name="quality" value="3"> No Opinion<br>
+      <input type="radio" name="quality" value="4"> Agree<br>
+      <input type="radio" name="quality" value="5"> Strongly Agree<br>
+      <input type="radio" name="quality" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> The panels I attended are relavent/meaningful content.</p>
+      <input type="radio" name="content" value="1"> Strongly Disagree<br>
+      <input type="radio" name="content" value="2"> Disagree<br>
+      <input type="radio" name="content" value="3"> No Opinion<br>
+      <input type="radio" name="content" value="4"> Agree<br>
+      <input type="radio" name="content" value="5"> Strongly Agree<br>
+      <input type="radio" name="content" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> TThe content of the panels I attended was understandable.</p>
+      <input type="radio" name="understandable" value="1"> Strongly Disagree<br>
+      <input type="radio" name="understandable" value="2"> Disagree<br>
+      <input type="radio" name="understandable" value="3"> No Opinion<br>
+      <input type="radio" name="understandable" value="4"> Agree<br>
+      <input type="radio" name="understandable" value="5"> Strongly Agree<br>
+      <input type="radio" name="understandable" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> The panels I attended were entertaining.</p>
+      <input type="radio" name="entertaining" value="1"> Strongly Disagree<br>
+      <input type="radio" name="entertaining" value="2"> Disagree<br>
+      <input type="radio" name="entertaining" value="3"> No Opinion<br>
+      <input type="radio" name="entertaining" value="4"> Agree<br>
+      <input type="radio" name="entertaining" value="5"> Strongly Agree<br>
+      <input type="radio" name="entertaining" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> The panels I attended had knowledgeable panelist.</p>
+      <input type="radio" name="knowledageable" value="1"> Strongly Disagree<br>
+      <input type="radio" name="knowledageable" value="2"> Disagree<br>
+      <input type="radio" name="knowledageable" value="3"> No Opinion<br>
+      <input type="radio" name="knowledageable" value="4"> Agree<br>
+      <input type="radio" name="knowledageable" value="5"> Strongly Agree<br>
+      <input type="radio" name="knowledageable" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> I will return for additional science panels in the future.</p>
+      <input type="radio" name="willReturn" value="1"> Strongly Disagree<br>
+      <input type="radio" name="willReturn" value="2"> Disagree<br>
+      <input type="radio" name="willReturn" value="3"> No Opinion<br>
+      <input type="radio" name="willReturn" value="4"> Agree<br>
+      <input type="radio" name="willReturn" value="5"> Strongly Agree<br>
+      <input type="radio" name="willReturn" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> I learned something new during a panel.</p>
+      <input type="radio" name="learnedSomething" value="1"> Strongly Disagree<br>
+      <input type="radio" name="learnedSomething" value="2"> Disagree<br>
+      <input type="radio" name="learnedSomething" value="3"> No Opinion<br>
+      <input type="radio" name="learnedSomething" value="4"> Agree<br>
+      <input type="radio" name="learnedSomething" value="5"> Strongly Agree<br>
+      <input type="radio" name="learnedSomething" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> I will use information I learned from a panel in my daily life.</p>
+      <input type="radio" name="useInformation" value="1"> Strongly Disagree<br>
+      <input type="radio" name="useInformation" value="2"> Disagree<br>
+      <input type="radio" name="useInformation" value="3"> No Opinion<br>
+      <input type="radio" name="useInformation" value="4"> Agree<br>
+      <input type="radio" name="useInformation" value="5"> Strongly Agree<br>
+      <input type="radio" name="useInformation" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> A panel or panels helped me have a better understanding of science.</p>
+      <input type="radio" name="scienceLearning" value="1"> Strongly Disagree<br>
+      <input type="radio" name="scienceLearning" value="2"> Disagree<br>
+      <input type="radio" name="scienceLearning" value="3"> No Opinion<br>
+      <input type="radio" name="scienceLearning" value="4"> Agree<br>
+      <input type="radio" name="scienceLearning" value="5"> Strongly Agree<br>
+      <input type="radio" name="scienceLearning" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> I will share ideas that were discussed in panels with friends, family, or colleagues.</p>
+      <input type="radio" name="shareIdeas" value="1"> Strongly Disagree<br>
+      <input type="radio" name="shareIdeas" value="2"> Disagree<br>
+      <input type="radio" name="shareIdeas" value="3"> No Opinion<br>
+      <input type="radio" name="shareIdeas" value="4"> Agree<br>
+      <input type="radio" name="shareIdeas" value="5"> Strongly Agree<br>
+      <input type="radio" name="shareIdeas" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> The panels encouraged me to consider a career in science.</p>
+      <input type="radio" name="considerCareer" value="1"> Strongly Disagree<br>
+      <input type="radio" name="considerCareer" value="2"> Disagree<br>
+      <input type="radio" name="considerCareer" value="3"> No Opinion<br>
+      <input type="radio" name="considerCareer" value="4"> Agree<br>
+      <input type="radio" name="considerCareer" value="5"> Strongly Agree<br>
+      <input type="radio" name="considerCareer" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p> I made useful professional contacts at a panel. </p>
+      <input type="radio" name="networking" value="1"> Strongly Disagree<br>
+      <input type="radio" name="networking" value="2"> Disagree<br>
+      <input type="radio" name="networking" value="3"> No Opinion<br>
+      <input type="radio" name="networking" value="4"> Agree<br>
+      <input type="radio" name="networking" value="5"> Strongly Agree<br>
+      <input type="radio" name="networking" value="n/a"> N/A<br>
+    </div>
+
+    <div>
+      <p>In the area below, please write anything else you want us to know about the <strong>Science Panels</strong> at Phoenix Comicfest (formerly Phoenix Comicon):</p>
+      <input type="textarea" name="comments" value=""><br>
+    </div>
+
+    <br>
+    <button action="submit">Submit</button>
+
+  </form>
+</div>
