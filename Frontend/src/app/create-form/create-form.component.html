@@ -4,7 +4,7 @@
     <h1><strong>Create Your Form Here!</strong></h1>
   </div>
 
-  <form [formGroup]="myForm" novalidate (ngSubmit)="save(myForm)">
+  <form [formGroup]="myForm" novalidate (ngSubmit)="save(myForm)" onsubmit="window.location.href='/dashboard'">
       <!-- we will place our fields here -->
 
       <div class="form-group">

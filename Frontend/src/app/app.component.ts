@@ -15,21 +15,29 @@ export class AppComponent {
   items: Observable<any>;
   // items: FirebaseListObservable <any[]>;
   msgVal = '';
+  realItems = [];
 
   
   
 
   constructor(public afAuth: AngularFireAuth, public af: AngularFireDatabase, db: AngularFirestore) {
       
-    this.items = db.collection('form').valueChanges();
+    this.items = db.collection('forms').valueChanges();
 
 
   }
 
-  // DOSOMETHING() {
-  //   this.items.push({form: 'sdfsdfsdf'});
+  DOSOMETHING() {
+    console.log(this.items);
+    this.items.subscribe(item => {
+      console.log(item);
+      const temp = Object.keys(item);
+      for (const prop of temp) {
+        this.realItems.push(temp[prop]);
+      }
+    });
  
-  // }
+  }
 
 
 

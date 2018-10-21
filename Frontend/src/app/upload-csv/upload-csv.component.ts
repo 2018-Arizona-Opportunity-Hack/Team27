@@ -11,8 +11,8 @@ export class UploadCSVComponent implements OnInit {
 
 
   public uploader:FileUploader = new FileUploader({
-      url: "",
-      allowedMimeType: ['text/csv']
+      url: 'https://team27-2aad9.firebaseio.com',
+      // allowedMimeType: ['text/csv']
   });
   public hasBaseDropZoneOver:boolean = false;
   public hasAnotherDropZoneOver:boolean = false;
