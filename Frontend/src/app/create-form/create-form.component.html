@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="container">
+  <div style="width: 100%; text-align: center;">
+    <h1><strong>Create Your Form Here!</strong></h1>
+  </div>
+
+  <form [formGroup]="myForm" novalidate (ngSubmit)="save(myForm)">
+      <!-- we will place our fields here -->
+
+      <div class="form-group">
+          <label>Name:</label>
+          <input type="text" formControlName="name">
+          <!--display error message if name is not valid-->
+          <small *ngIf="!myForm.controls.name.valid" class="text-danger">
+              Name is required.
+          </small>
+      </div>
+
+      <div formArrayName="questions">
+              <div class="panel panel-default" *ngFor="let question of myForm.controls.questions.controls; let i=index">
+                  <!-- address header, show remove button when more than one address available -->
+                  <div class="panel-heading">
+                      <span>Question {{i + 1}}</span>
+                      <span class="glyphicon glyphicon-remove pull-right" *ngIf="myForm.controls.questions.controls.length > 1" (click)="removeAddress(i)"></span>
+                  </div>
+
+                  <!-- Angular assigns array index as group name by default 0, 1, 2, ... -->
+
+                  <div class="panel-body" [formGroupName]="i">
+                    <app-question [group]="myForm.controls.questions.controls[i]"></app-question>
+                  </div>
+            </div>
+      </div>
+      <div class="margin-20 addAddress">
+        <a (click)="addAddress()">
+          Add another question +
+        </a>
+      </div><br>
+
+
+      <button type="submit" [disabled]="!myForm.valid">Submit</button>
+  </form>
+
+
+</div>

@@ -1,0 +1,62 @@
+html, body {
+  font-family: Merriweather, Georgia, serif;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: black;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+
+.container {
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 4em;
+  color: black;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+form div {
+  margin: auto;
+  text-align: left;
+  /*border: 1px solid cyan;*/
+}
+
+form p {
+
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+form button {
+  display: block;
+  margin: auto;
+  width: 40%;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  font-size: 2em;
+}
+
+.textArea{
+  width: 100%;
+  border-radius: 10px;
+  min-height: 100px;
+  
+}
