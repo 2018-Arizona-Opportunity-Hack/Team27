@@ -4,7 +4,7 @@ import { FileUploadModule } from 'ng2-file-upload';
 // import { ToastModule } from 'ng2-toastr/ng2-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { AngularFirestore } from '@angular/fire/firestore';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { FormsComponent } from './forms/forms.component';
@@ -15,9 +15,12 @@ import { ViewFormsComponent } from './view-forms/view-forms.component';
 import { UploadCSVComponent } from './upload-csv/upload-csv.component';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { QuestionComponent } from './create-form/question/question.component';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database-deprecated';
+import { AngularFireAuth } from '@angular/fire/auth';
 import {environment } from '../environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
 
 
 
@@ -41,11 +44,20 @@ import {environment } from '../environments/environment';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireModule.initializeApp({
+      apiKey: 'AIzaSyA_gJO5U52ZvlsjtZ8QLwb2qjzgVbmNbJ0',
+      authDomain: 'team27-2aad9.firebaseapp.com',
+      databaseURL: 'https://team27-2aad9.firebaseio.com',
+      projectId: 'team27-2aad9',
+      storageBucket: 'team27-2aad9.appspot.com',
+      messagingSenderId: '221062202690'
+    }),
+    AngularFireDatabaseModule,
+    // AngularFireAuth,
+    AngularFireAuthModule
 
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
