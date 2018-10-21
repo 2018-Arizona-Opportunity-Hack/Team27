@@ -15,6 +15,11 @@ import { ViewFormsComponent } from './view-forms/view-forms.component';
 import { UploadCSVComponent } from './upload-csv/upload-csv.component';
 import { CreateFormComponent } from './create-form/create-form.component';
 import { QuestionComponent } from './create-form/question/question.component';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import {environment } from '../environments/environment';
+
+
 
 @NgModule({
   declarations: [
@@ -35,7 +40,9 @@ import { QuestionComponent } from './create-form/question/question.component';
     // ToastModule.forRoot(),
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
 
   ],
   providers: [],
